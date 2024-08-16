@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>love calculator</h1>
+  <h2 id="love"></h2>
+  <h1 id="perc"></h1><br><br>
+  <p>whom do you love ? input yours and lover names</p>
+  <input type="text" name="" id="seyf"> <span>❤🧡💛💚</span>
+  <input type="text" name="" id="nabiyat"><br>
+  <button id="btn">calculate</button>
+  <script>
+    let sef = document.getElementById('seyf').value 
+    
+
+    document.getElementById('btn').addEventListener('click', function() {
+      let sef = document.getElementById('seyf').value 
+      let nab = document.getElementById('nabiyat').value 
+      document.getElementById('love').innerHTML = sef  +'💘🧡💚' +nab;
+
+      let n = Math.random()
+      let m = Math.floor(n*100) + 1;
+
+      let ani = document.getElementById('perc').innerHTML = m+ '%';
+      if (m>50) {
+        document.getElementById('perc').innerHTML= ani + '🔆Wow you love each other'
+      }else {
+        document.getElementById('perc').innerHTML= ani + '💔⁉ better to depart'
+      }
+    })
+  </script>
+</body>
+</html>
